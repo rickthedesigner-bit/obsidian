@@ -1,0 +1,24 @@
+filters: file.folder == "Sign Posts"
+views:
+  - type: cards
+    name: View
+    order:
+      - file.name
+      - Length
+      - Subclass
+      - Cost
+    image: note.Product image
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - SKU
+      - Length
+      - Gauge
+      - Outside Dimension
+      - Cost
+      - Markup
+      - Retail
+      - Vendor
+      - Class
+      - Subclass

@@ -1,0 +1,43 @@
+views:
+  - type: table
+    name: View
+    filters:
+      and:
+        - file.folder == "Clippings"
+    order:
+      - file.name
+      - Film Type
+      - Durability
+      - Surface usability
+      - tags
+      - Class
+      - Subclass
+    sort:
+      - property: Surface usability
+        direction: ASC
+      - property: Class
+        direction: ASC
+    columnSize:
+      note.Film Type: 76
+      note.Durability: 102
+      note.Surface usability: 645
+      note.Class: 189
+      note.Subclass: 248
+  - type: list
+    name: View 2
+    filters:
+      and:
+        - file.folder == "Clippings"
+    order:
+      - file.name
+      - file.tags
+      - Surface usability
+  - type: cards
+    name: View 3
+    filters:
+      and:
+        - file.folder == "Clippings"
+    order:
+      - file.name
+      - Surface usability
+      - tags

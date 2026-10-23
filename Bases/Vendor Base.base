@@ -1,0 +1,49 @@
+formulas:
+  Untitled: ""
+views:
+  - type: cards
+    name: Logo
+    filters:
+      and:
+        - file.inFolder("Vendors")
+    order:
+      - file.name
+      - Contact email
+      - website
+    image: note.Product image
+    imageFit: contain
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "Vendors"
+    order:
+      - Vendor
+      - website
+      - Contact name
+      - Contact email
+      - Phone number
+      - Product image
+    sort:
+      - property: formula.Untitled
+        direction: DESC
+  - type: cards
+    name: View
+    order:
+      - file.name
+      - website
+      - Address
+    cardSize: 240
+    imageFit: contain
+    imageAspectRatio: 0.5
+  - type: table
+    name: View 2
+    filters:
+      and:
+        - file.folder == "Vendors"
+    order:
+      - Vendor
+      - file.name
+      - file.mtime
+      - Roll Cost
+      - file.folder

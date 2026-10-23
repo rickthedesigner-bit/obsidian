@@ -1,0 +1,24 @@
+views:
+  - type: table
+    name: View
+    filters:
+      and:
+        - Class == "Digital Media"
+    order:
+      - title
+      - file.name
+      - Surface usability
+      - Subclass
+    sort:
+      - property: title
+        direction: DESC
+      - property: tags
+        direction: DESC
+  - type: cards
+    name: View 2
+    order:
+      - file.name
+      - title
+      - Subclass
+      - Surface usability
+    image: note.Product image

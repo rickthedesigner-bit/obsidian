@@ -1,0 +1,26 @@
+views:
+  - type: cards
+    name: View
+    filters:
+      and:
+        - Class == "Digital Media"
+    order:
+      - file.name
+      - Subclass
+      - Surface usability
+    image: note.Product image
+    cardSize: 200
+    imageAspectRatio: 1
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "Clippings"
+    order:
+      - file.name
+      - Class
+      - Subclass
+      - Surface usability
+      - tags
+    columnSize:
+      file.name: 332
