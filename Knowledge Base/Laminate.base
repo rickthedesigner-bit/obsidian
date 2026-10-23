@@ -1,0 +1,17 @@
+views:
+  - type: cards
+    name: Card
+    filters:
+      and:
+        - Class == "Laminate"
+    order:
+      - file.name
+      - Subclass
+      - Brand
+      - Description
+    image: note.Product image
+  - type: table
+    name: View
+    filters:
+      and:
+        - Class == "Laminate"

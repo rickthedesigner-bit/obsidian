@@ -1,0 +1,35 @@
+views:
+  - type: cards
+    name: View 2
+    filters:
+      and:
+        - Class == "Digital Media"
+    order:
+      - file.name
+      - Subclass
+      - Surface usability
+      - Durability
+    image: note.Product image
+  - type: table
+    name: View
+    filters:
+      and:
+        - Class == "Digital Media"
+    order:
+      - file.name
+      - Surface usability
+      - Thickness
+      - Class
+      - Subclass
+      - Durability
+      - Description
+    sort:
+      - property: file.name
+        direction: DESC
+      - property: Description
+        direction: DESC
+    columnSize:
+      note.Surface usability: 122
+      note.Thickness: 95
+      note.Subclass: 132
+      note.Durability: 130
