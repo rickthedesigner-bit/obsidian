@@ -1,0 +1,15 @@
+filters: file.folder == "Sign Posts"
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - SKU
+      - Length
+      - Gauge
+      - Outside Dimension
+      - Cost
+      - Markup
+      - Retail
+      - Vendor
+      - Class

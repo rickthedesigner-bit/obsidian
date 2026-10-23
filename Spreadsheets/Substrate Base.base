@@ -1,0 +1,27 @@
+properties:
+  note.Sqft Cost1:
+    displayName: Sqft Cost
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "Substrates"
+    order:
+      - file.name
+      - Brand
+      - Cost
+      - Thickness
+      - Vendor
+      - notes
+      - Sqft Cost1
+      - Substrate
+    sort:
+      - property: Sqft Cost1
+        direction: DESC
+      - property: Cost
+        direction: ASC
+      - property: notes
+        direction: DESC
+    columnSize:
+      note.Vendor: 203

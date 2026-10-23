@@ -1,0 +1,12 @@
+filters: file.folder == "Sign Frames"
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - Title
+      - Size HxW
+      - Riders
+      - Cost
+      - Class
+      - Vendor
